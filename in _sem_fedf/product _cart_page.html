@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Cart</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #e0eafc, #cfdef3);
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 90%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+            font-size: 1.2em;
+            text-transform: uppercase;
+        }
+        td {
+            font-size: 1em;
+            color: #34495e;
+        }
+        img {
+            max-width: 120px;
+            height: auto;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.1);
+        }
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        tr:hover {
+            background-color: #e8f4f8;
+        }
+        .cost {
+            font-weight: bold;
+            color: #e74c3c;
+        }
+        .product-name {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Cart</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Product ID</th>
+                <th>Product Name</th>
+                <th>Cost ($)</th>
+                <th>Product Image</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>P001</td>
+                <td class="product-name">Wireless Mouse</td>
+                <td class="cost">29.99</td>
+                <td><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Wireless Mouse"></td>
+            </tr>
+            <tr>
+                <td>P002</td>
+                <td class="product-name">Bluetooth Headphones</td>
+                <td class="cost">79.99</td>
+                <td><img src="https://images.unsplash.com/photo-1613040809024-b4ef7ba99bc3?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Bluetooth Headphones"></td>
+            </tr>
+            <tr>
+                <td>P003</td>
+                <td class="product-name">USB-C Cable</td>
+                <td class="cost">12.99</td>
+                <td><img src="https://media.istockphoto.com/id/1226628599/photo/black-micro-usb-cable-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=h0DjhRiaqpdpq-2i1xIc2bFdw2m1iHlmxnFlY71F7Fs=" alt="USB-C Cable"></td>
+            </tr>
+            <tr>
+                <td>P004</td>
+                <td class="product-name">Portable Charger</td>
+                <td class="cost">39.99</td>
+                <td><img src="https://c7.alamy.com/comp/JEKRH5/black-cell-phone-charger-cord-on-a-white-surface-cell-phone-charger-JEKRH5.jpg" alt="Portable Charger"></td>
+            </tr>
+            <tr>
+                <td>P005</td>
+                <td class="product-name">Webcam</td>
+                <td class="cost">59.99</td>
+                <td><img src="https://images.unsplash.com/photo-1593642634315-48f5414c3ad9?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Webcam"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
